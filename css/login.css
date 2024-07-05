@@ -1,0 +1,57 @@
+/* Styling for the overall body of the page */
+body {
+    font-family: Tahoma;
+    background:url("../images/air2.png");
+    background-size: cover;
+    background-position: center bottom; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Styling for the login form container */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: url("../images/login.jpg");
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Styling for the h1 and h2 elements within the login form + hover effects on button */
+.login-form h1{
+    color:#ff6600;
+}
+
+.login-form h2{
+    color:#1f2c7d;
+}
+
+.login-form a:hover{
+    color:red;
+}
+/* Styling for text and password input fields within the login form */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for the submit button within the login form + hover effects */
+.login-form input[type="submit"] {
+    width: 100%;
+    background-color: #a80000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #1f2c7d;
+}

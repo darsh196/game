@@ -1,0 +1,61 @@
+/* Styling for the overall body of the page */
+body {
+    font-family: Tahoma;
+    background:url("../images/air2.png");
+    background-size: cover;
+    background-position: center bottom; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Styling for the signup form container */
+.signup-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: url("../images/login.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Styling for the h1 and h2 elements within the signup form + hover effects */
+.signup-form h1{
+    color:#a80000;
+    font-size: 20px;
+}
+
+.signup-form h2{
+    color:#1f2c7d;
+    font-size: 12px;
+}
+
+.signup-form a:hover{
+    color:red;
+}
+/* Styling for text and password input fields within the signup form */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"],
+.signup-form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* Styling for the submit button within the signup form + hover effects */
+.signup-form input[type="submit"] {
+    width: 100%;
+    background-color: #a80000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #1f2c7d;
+}

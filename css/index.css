@@ -1,0 +1,207 @@
+body,html{margin:0}
+
+/* Setting box sizing for all elements and pseudo-elements */
+
+*,*:after,*:before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body{
+  font-family: arial;
+  font-size: 16px;
+  margin: 0;
+  background: #fff;
+  color: #000;
+}
+
+/* Styling for the snow container */
+
+.snow_wrap{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background:url('../images/air2.png');
+  background-size: cover;
+  background-position: center bottom; 
+  overflow: hidden;
+}
+/* Styling for the snowflakes and their pseudo-elements */
+.snow, .snow:before, .snow:after {
+position: absolute;
+top: -650px;
+left: 0;
+bottom: 0;
+right: 0;
+background-image: 
+radial-gradient(4px 4px at 100px 50px, #f0f0f0, transparent), 
+radial-gradient(6px 6px at 200px 150px, #f0f0f0, transparent), 
+radial-gradient(3px 3px at 300px 250px, #f0f0f0 50%, transparent), 
+radial-gradient(4px 4px at 400px 350px, #f0f0f0 50%, transparent), 
+radial-gradient(6px 6px at 500px 100px, #f0f0f0 50%, transparent), 
+radial-gradient(3px 3px at 50px 200px, #f0f0f0 50%, transparent), 
+radial-gradient(4px 4px at 150px 300px, #f0f0f0 50%, transparent), 
+radial-gradient(6px 6px at 250px 400px, #f0f0f0 50%, transparent), 
+radial-gradient(3px 3px at 350px 500px, #f0f0f0 50%, transparent);
+background-size: 650px 650px;
+animation: snow 3s linear infinite;
+content: "";
+}
+
+/* Styling for the pseudo-element after snowflakes */
+
+.snow:after {
+margin-left: -250px;
+opacity: 0.5;
+filter: blur(2px);
+animation-duration: 6s;
+animation-direction: reverse;
+}
+/* Styling for the pseudo-element before snowflakes */
+
+.snow:before {
+  margin-left: -350px;
+opacity: 0.7;
+filter: blur(1px);
+animation-duration: 9s;
+animation-direction: reverse;
+}
+
+/* Keyframes animation for snowfall effect */
+
+@keyframes snow {
+to {
+  transform: translateY(650px);
+}
+}
+
+/* Styling for the welcome and user text */
+.welcome-text {
+  color: #1f2c7d; 
+}
+
+.user-text {
+  color: #900101; 
+}
+
+/* Styling for the buttons and links + hover effects */
+
+.buttons{
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	text-align: center;
+	font-family: Tahoma;
+	padding:30px;
+}
+.buttons a {
+   	  color: #1f2c7d;
+	  text-align: center;
+	  padding: 40px 70px;
+	  text-decoration: none;
+	  font-size: 25px;
+	  font-weight: bold;
+	  display:block;
+	  text-align: center;
+}
+
+
+
+.buttons a.instructions{
+	color:black;
+}
+
+.buttons a.leaderboard{
+	color:#900101;
+}
+
+.buttons a:hover {
+	background-color: #900101;
+  	color: white;
+}
+
+/* Styling for the content wrapper using flexbox */
+
+.content-wrapper {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+/* Styling for the logo picture, image and buttons using flexbox */
+
+.logo-picture, .image, .buttons {
+    flex: 1; /* Divide the space equally between the elements */
+    text-align: center; /* Align the content to the center */
+}
+
+/* Styling for the top navigation bar and links + hover effects */
+.topnav {
+position: relative;
+z-index: 1;
+overflow: hidden;
+text-align: center;
+font-family: Tahoma;
+padding:30px;
+}
+
+.topnav a {
+  color: #1f2c7d;
+  text-align: center;
+  padding: 10px 70px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: #a80000;
+  font-weight: bold;
+}
+
+/* Styling for the logo header */
+.logo-header {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #900101;
+  margin-top: 20px;
+}
+
+/* Styling for the images */
+.image {
+  text-align: center;
+  margin-top: 30px;
+  transition: background-image 0.3s;
+}
+
+.image img {
+  border: 5px solid #a80000; 
+  border-radius: 10px; 
+}
+
+/* Styling for the main footer */
+
+#main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  z-index: 1;
+}
+
+
+
+  
