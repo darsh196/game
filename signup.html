@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>SignUp - Millennium Dogfight</title>
+    <script src="javascript/signup.js" defer></script>
+</head>
+<body>
+    <!-- Signup form container -->
+    <div class="signup-form">
+        <!-- Heading and subheading for the signup form -->
+        <center><h1>Welcome to Millennium Dogfight!</h1></center>
+        <center><h3><u>Sign Up Now!</u></h3></center>
+        <!-- Form for user signup with action attribute to redirect to the index.html page -->
+        <form action="index.html" onsubmit="return validateForm()">
+            <h2>Enter your username:</h2>
+            <input type="text" id="username" placeholder="Username" required><br>
+
+            <h2>Enter your email:</h2>
+            <input type="email" id="email" placeholder="Email" required><br>
+
+            <h2>Enter your location:</h2>
+            <input type="text" id="location" placeholder="Location" required><br>
+
+            <h2>Enter your phone number:</h2>
+            <input type="tel" id="phoneNumber" placeholder="Phone Number" required><br>
+
+            <h2>Enter your password:</h2>
+            <input type="password"  id="password" placeholder="Password" required><br>
+
+            <input type="submit" value="Sign Up">
+            <center><p>Already have an account?<br><a href="login.html">Log in here</a></p></center>
+        </form>
+    </div>
+</body>
+</html>

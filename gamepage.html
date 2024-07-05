@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/gamepage.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>Game Page - Millennium Dogfight</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="topnav">
+          <a href="index.html">HOME</a>
+          <a href="instructions.html">INSTRUCTIONS</a>
+          <a href="about.html">ABOUT</a>
+          <a href="leaderboard.html">LEADERBOARD</a>
+    </div>
+    <!-- Display for the game's score and current level -->
+    <div class="score-level-display">
+        <div id = "score">SCORE: 0</div>
+        <div id="timer">TIMER: 0</div>
+    </div>
+
+    <div id="game-over-window">
+        <h1>GAME OVER</h1>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <p id="redirect-message"></p>
+    </div>
+    <!-- Background wrap section -->
+    <div id="background-wrap">
+
+        <!-- cloud containers -->
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+        <!-- Container for various images used in the game -->
+        <div class="images-container">
+            <!-- Player image -->
+            <div class="player">
+                <img src="images/f22player.png" height="70px" alt="f221">
+            </div>
+            <!-- Missile image -->
+            <div class = "missile">
+                <img src="images/missile.png" height="20px" alt="missile">
+            </div>
+
+            <div class = "missile2">
+                <img src="images/missile.png" height="20px" alt="missile">
+            </div>
+
+            <div class = "missile3">
+                <img src="images/missile.png" height="20px" alt="missile">
+            </div>
+
+            <!-- Enemy aircraft image -->
+            <div class="su57">
+                <img src="images/su57enemy.png" height="60px" alt="su57">
+            </div>
+        </div>
+
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+
+
+    </div>
+<script src="javascript/game.js"></script>
+</body>
+</html>
